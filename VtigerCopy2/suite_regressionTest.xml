@@ -6,6 +6,9 @@
     <include name="regressionTest"/>
   </run>
  </groups>
+ <listeners>
+		<listener class-name="com.Vtiger.generic.ListenerUtility.ListenerImplimentation"></listener>
+	</listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.V_tiger.Contact.CreateContactTest"/>
