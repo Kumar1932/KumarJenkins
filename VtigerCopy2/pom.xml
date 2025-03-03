@@ -95,7 +95,7 @@
 			        <version>3.5.2</version>
 			        <configuration>
 			          <suiteXmlFiles>
-			            <suiteXmlFile>suite_fullRegressionTest.xml</suiteXmlFile>
+			            <suiteXmlFile>suite_regressionTest.xml</suiteXmlFile>
 			          </suiteXmlFiles>
 			        </configuration>
 			      </plugin>
