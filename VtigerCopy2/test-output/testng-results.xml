@@ -1,63 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-02T19:30:42 IST" name="Suite" finished-at="2025-03-02T19:31:16 IST" duration-ms="33473">
+  <suite started-at="2025-03-03T17:38:44 IST" name="Suite" finished-at="2025-03-03T17:41:02 IST" duration-ms="138055">
     <groups>
-      <group name="smokeTest">
-        <method signature="CreateContactTest.createContactWithNameTest()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" name="createContactWithNameTest" class="com.V_tiger.Contact.CreateContactTest"/>
-        <method signature="CreateOrganizationTest.createOrgWithNameTest()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" name="createOrgWithNameTest" class="com.V_tiger.Organization.CreateOrganizationTest"/>
-      </group> <!-- smokeTest -->
+      <group name="regressionTest">
+        <method signature="CreateContactTest.createContactWithDateTest()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" name="createContactWithDateTest" class="com.V_tiger.Contact.CreateContactTest"/>
+        <method signature="CreateContactTest.createContactWithOrgTest()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" name="createContactWithOrgTest" class="com.V_tiger.Contact.CreateContactTest"/>
+        <method signature="CreateOrganizationTest.createOrgWithPhoneTest()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" name="createOrgWithPhoneTest" class="com.V_tiger.Organization.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrgWithTypeTest()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" name="createOrgWithTypeTest" class="com.V_tiger.Organization.CreateOrganizationTest"/>
+      </group> <!-- regressionTest -->
     </groups>
-    <test started-at="2025-03-02T19:30:42 IST" name="Test" finished-at="2025-03-02T19:31:16 IST" duration-ms="33473">
+    <test started-at="2025-03-03T17:38:44 IST" name="Test" finished-at="2025-03-03T17:41:02 IST" duration-ms="138055">
       <class name="com.V_tiger.Contact.CreateContactTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:30:24 IST" name="configBS" finished-at="2025-03-02T19:30:42 IST" duration-ms="17889" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:38:44 IST" name="configBS" finished-at="2025-03-03T17:38:44 IST" duration-ms="697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:30:42 IST" name="configBC" finished-at="2025-03-02T19:30:44 IST" duration-ms="2136" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:38:44 IST" name="configBC" finished-at="2025-03-03T17:38:50 IST" duration-ms="6142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:30:44 IST" name="configBM" finished-at="2025-03-02T19:30:48 IST" duration-ms="3544" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:38:50 IST" name="configBM" finished-at="2025-03-03T17:38:58 IST" duration-ms="7159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createContactWithNameTest()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:30:48 IST" name="createContactWithNameTest" finished-at="2025-03-02T19:30:58 IST" duration-ms="9980" status="PASS">
+        <test-method signature="createContactWithDateTest()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:38:58 IST" name="createContactWithDateTest" finished-at="2025-03-03T17:39:18 IST" duration-ms="20482" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContactWithNameTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:30:58 IST" name="configAM" finished-at="2025-03-02T19:30:59 IST" duration-ms="1503" status="PASS">
+        </test-method> <!-- createContactWithDateTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:39:18 IST" name="configAM" finished-at="2025-03-03T17:39:27 IST" duration-ms="8446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:30:59 IST" name="configAC" finished-at="2025-03-02T19:31:00 IST" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:39:27 IST" name="configBM" finished-at="2025-03-03T17:39:31 IST" duration-ms="4663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithOrgTest()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:39:31 IST" name="createContactWithOrgTest" finished-at="2025-03-03T17:40:02 IST" duration-ms="30494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrgTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:40:02 IST" name="configAM" finished-at="2025-03-03T17:40:04 IST" duration-ms="2229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:40:04 IST" name="configAC" finished-at="2025-03-03T17:40:05 IST" duration-ms="836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-02T19:31:16 IST" name="configAS" finished-at="2025-03-02T19:31:16 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.V_tiger.Contact.CreateContactTest@5b12b668]" started-at="2025-03-03T17:41:02 IST" name="configAS" finished-at="2025-03-03T17:41:02 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
       </class> <!-- com.V_tiger.Contact.CreateContactTest -->
       <class name="com.V_tiger.Organization.CreateOrganizationTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-02T19:31:00 IST" name="configBC" finished-at="2025-03-02T19:31:01 IST" duration-ms="1209" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:05 IST" name="configBC" finished-at="2025-03-03T17:40:07 IST" duration-ms="1917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-02T19:31:01 IST" name="configBM" finished-at="2025-03-02T19:31:04 IST" duration-ms="3289" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:07 IST" name="configBM" finished-at="2025-03-03T17:40:13 IST" duration-ms="6073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createOrgWithNameTest()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-02T19:31:04 IST" name="createOrgWithNameTest" finished-at="2025-03-02T19:31:14 IST" duration-ms="9749" status="PASS">
+        <test-method signature="createOrgWithPhoneTest()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:13 IST" name="createOrgWithPhoneTest" finished-at="2025-03-03T17:40:29 IST" duration-ms="15863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrgWithNameTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-02T19:31:14 IST" name="configAM" finished-at="2025-03-02T19:31:15 IST" duration-ms="1430" status="PASS">
+        </test-method> <!-- createOrgWithPhoneTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:29 IST" name="configAM" finished-at="2025-03-03T17:40:36 IST" duration-ms="7695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-02T19:31:15 IST" name="configAC" finished-at="2025-03-02T19:31:16 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:36 IST" name="configBM" finished-at="2025-03-03T17:40:41 IST" duration-ms="4734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrgWithTypeTest()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:41 IST" name="createOrgWithTypeTest" finished-at="2025-03-03T17:40:55 IST" duration-ms="14187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgWithTypeTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:40:55 IST" name="configAM" finished-at="2025-03-03T17:41:02 IST" duration-ms="6763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.V_tiger.Organization.CreateOrganizationTest@5542c4ed]" started-at="2025-03-03T17:41:02 IST" name="configAC" finished-at="2025-03-03T17:41:02 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
