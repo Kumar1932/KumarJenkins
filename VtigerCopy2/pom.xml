@@ -103,7 +103,7 @@
 			</build>
       </profile>   
       <profile>
-      	<id>parallelCrossBrowser</id>
+      	<id>distributedCrossBrowser</id>
 	        <build>
 			   <plugins>
 			      <plugin>
