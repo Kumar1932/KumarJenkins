@@ -4,9 +4,21 @@
   <listeners>
     <listener class-name="com.Vtiger.generic.ListenerUtility.ListenerImplimentation"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="testRunner-chrome(failed)" verbose="0">
-    <parameter name="BROWSER" value="chrome"/>
+  <test thread-count="2" parallel="tests" name="testRunner-edge(failed)" verbose="0">
+    <parameter name="BROWSER" value="firefox"/>
     <classes>
+      <class name="com.V_tiger.Organization.CreateOrganizationTest">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createOrgWithTypeTest"/>
+          <include name="createOrgWithPhoneTest"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+        </methods>
+      </class> <!-- com.V_tiger.Organization.CreateOrganizationTest -->
       <class name="com.V_tiger.Contact.CreateContactTest">
         <methods>
           <include name="configAM"/>
@@ -20,22 +32,5 @@
         </methods>
       </class> <!-- com.V_tiger.Contact.CreateContactTest -->
     </classes>
-  </test> <!-- testRunner-chrome(failed) -->
-  <test thread-count="2" parallel="tests" name="testRunner-firefox(failed)" verbose="0">
-    <parameter name="BROWSER" value="edge"/>
-    <classes>
-      <class name="com.V_tiger.Organization.CreateOrganizationTest">
-        <methods>
-          <include name="configAM"/>
-          <include name="configBM"/>
-          <include name="configAC"/>
-          <include name="configAS"/>
-          <include name="createOrgWithTypeTest"/>
-          <include name="configBC"/>
-          <include name="configBS"/>
-          <include name="createOrgWithPhoneTest"/>
-        </methods>
-      </class> <!-- com.V_tiger.Organization.CreateOrganizationTest -->
-    </classes>
-  </test> <!-- testRunner-firefox(failed) -->
+  </test> <!-- testRunner-edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->
