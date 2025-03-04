@@ -11,7 +11,9 @@
       <class name="com.V_tiger.Organization.CreateOrganizationTest"/>
       </classes>
     </test>
-    
+ <listeners>
+ 		<listener class-name="com.Vtiger.generic.ListenerUtility.ListenerImplimentation"></listener>
+ 	</listeners> 
  <test name="testRunner-edge">
   <parameter name="BROWSER" value="edge"/>
     <classes>
