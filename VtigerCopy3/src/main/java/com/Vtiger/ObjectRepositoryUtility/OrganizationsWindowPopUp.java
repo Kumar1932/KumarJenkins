@@ -13,10 +13,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OrganizationsWindowPopUp 
 {
-	 WebDriver driver;
+	
 		public OrganizationsWindowPopUp(WebDriver driver)
 		{
-			this.driver=driver;
 			PageFactory.initElements(driver, this);
 		}
 		@FindBy(id="search_txt")

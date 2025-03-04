@@ -15,10 +15,9 @@ public class ContactInfoPage
 {
 
 	WebDriverUtility wlib=new WebDriverUtility();
-    WebDriver driver;
+    
 	public ContactInfoPage(WebDriver driver) 
 	{
-	 this.driver=driver;
 	 PageFactory.initElements(driver, this);
 	}
 	

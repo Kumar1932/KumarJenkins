@@ -12,10 +12,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreateNewOrganizationPage 
 {
-	WebDriver driver;
 	public CreateNewOrganizationPage(WebDriver driver) 
 	{
-	 this.driver=driver;
 	 PageFactory.initElements(driver, this);
 	}
 	@FindBy(name="accountname")

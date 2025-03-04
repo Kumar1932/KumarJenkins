@@ -15,10 +15,8 @@ import com.Vtiger.generic.WebDriverUtility.WebDriverUtility;
 public class CreateNewContactPage 
 {
 	WebDriverUtility wlib=new WebDriverUtility();
-    WebDriver driver;
 	public CreateNewContactPage(WebDriver driver) 
 	{
-	 this.driver=driver;
 	 PageFactory.initElements(driver, this);
 	}
 	

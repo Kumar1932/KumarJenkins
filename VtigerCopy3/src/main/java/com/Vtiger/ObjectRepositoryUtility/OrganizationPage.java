@@ -12,10 +12,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OrganizationPage 
 {
-	WebDriver driver;
 	public OrganizationPage(WebDriver driver) 
 	{
-	 this.driver=driver;
 	 PageFactory.initElements(driver, this);
 	}
 	

@@ -12,10 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OrganizationInfoPage 
 {
-	WebDriver driver;
+	
 	public OrganizationInfoPage(WebDriver driver) 
 	{
-	 this.driver=driver;
 	 PageFactory.initElements(driver, this);
 	}
 	
