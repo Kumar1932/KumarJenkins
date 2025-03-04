@@ -124,7 +124,8 @@ public class BaseClass
 	{
 		
 		HomePage hp=new HomePage(driver);
-		wlib.moveToElement(driver, hp.getProfileIcon());
+		//wlib.moveToElement(driver, hp.getProfileIcon());
+		hp.getProfileIcon().click();
 		hp.getSignOutLink().click();
 		System.out.println("======logout======");
 	}
