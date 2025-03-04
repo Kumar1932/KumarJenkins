@@ -13,7 +13,7 @@
     </test>
     
  <test name="testRunner-firefox">
-  <parameter name="BROWSER" value="edge"/>
+  <parameter name="BROWSER" value="firefox"/>
     <classes>
       
       <class name="com.V_tiger.Organization.CreateOrganizationTest"/>

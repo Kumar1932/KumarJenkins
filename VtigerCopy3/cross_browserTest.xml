@@ -12,7 +12,7 @@
       </classes>
     </test>
  <test name="testRunner-edge">
-  <parameter name="BROWSER" value="edge"/>
+  <parameter name="BROWSER" value="firefox"/>
     <classes>
       <class name="com.V_tiger.Organization.CreateOrganizationTest"/>
       <class name="com.V_tiger.Contact.CreateContactTest"/>
