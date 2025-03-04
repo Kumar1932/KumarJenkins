@@ -103,7 +103,7 @@
 			</build>
       </profile>   
       <profile>
-      	<id>distributedCrossBrowser</id>
+      	<id>DCB</id>
 	        <build>
 			   <plugins>
 			      <plugin>
