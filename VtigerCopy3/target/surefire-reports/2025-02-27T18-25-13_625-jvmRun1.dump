@@ -1,0 +1,231 @@
+# Created at 2025-02-27T18:25:56.861
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (9652@Kumarswamy-PC):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at app//freemarker.core.FMParserTokenManager.jjMoveNfa_0(FMParserTokenManager.java:3890)
+        at app//freemarker.core.FMParserTokenManager.jjMoveStringLiteralDfa0_0(FMParserTokenManager.java:531)
+        at app//freemarker.core.FMParserTokenManager.getNextToken(FMParserTokenManager.java:8142)
+        at app//freemarker.core.FMParser.jj_ntk_f(FMParser.java:6028)
+        at app//freemarker.core.FMParser.PCData(FMParser.java:3811)
+        at app//freemarker.core.FMParser.MixedContentElements(FMParser.java:3963)
+        at app//freemarker.core.FMParser.Macro(FMParser.java:2835)
+        at app//freemarker.core.FMParser.FreemarkerDirective(FMParser.java:3656)
+        at app//freemarker.core.FMParser.MixedContentElements(FMParser.java:4019)
+        at app//freemarker.core.FMParser.Root(FMParser.java:4665)
+        at app//freemarker.template.Template.<init>(Template.java:252)
+        at app//freemarker.cache.TemplateCache.loadTemplate(TemplateCache.java:549)
+        at app//freemarker.cache.TemplateCache.getTemplateInternal(TemplateCache.java:440)
+        at app//freemarker.cache.TemplateCache.getTemplate(TemplateCache.java:293)
+        at app//freemarker.template.Configuration.getTemplate(Configuration.java:2910)
+        at app//freemarker.core.Environment.getTemplateForInclusion(Environment.java:3062)
+        at app//freemarker.core.Include.accept(Include.java:162)
+        at app//freemarker.core.Environment.visit(Environment.java:335)
+        at app//freemarker.core.Environment.visit(Environment.java:341)
+        at app//freemarker.core.Environment.process(Environment.java:314)
+        at app//freemarker.template.Template.process(Template.java:383)
+        at app//com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:51)
+        at app//com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:39)
+        at app//com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:44)
+        at app//com.aventstack.extentreports.reporter.AbstractFileReporter.processTemplate(AbstractFileReporter.java:74)
+        at app//com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:149)
+        at app//com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:121)
+        at app//com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:113)
+        at app//io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+        at app//io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+        at app//com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+        at app//com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:96)
+        at app//com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+        at app//com.Vtiger.generic.ListenerUtility.ListenerImplimentation.onFinish(ListenerImplimentation.java:45)
+        at app//org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:249)
+        at app//org.testng.SuiteRunner.run(SuiteRunner.java:314)
+        at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+        at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+        at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+        at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+        at app//org.testng.TestNG.run(TestNG.java:1079)
+        at app//org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+        at app//org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.11/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@17.0.11/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+        at java.base@17.0.11/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.11/java.lang.Object.wait(Native Method)
+        at java.base@17.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@17.0.11/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/java.lang.Object.wait(Native Method)
+        at java.base@17.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.11/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+        at java.base@17.0.11/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@17.0.11/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@17.0.11/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:315)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+
+"ForkJoinPool.commonPool-worker-1" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"ForkJoinPool.commonPool-worker-2" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"ForkJoinPool.commonPool-worker-3" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"ForkJoinPool.commonPool-worker-5" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"ForkJoinPool.commonPool-worker-4" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"ForkJoinPool.commonPool-worker-6" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.11/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"mysql-cj-abandoned-connection-cleanup" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/java.lang.Object.wait(Native Method)
+        at java.base@17.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at app//com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+
+"HttpClient-1-SelectorManager" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.11/sun.nio.ch.WEPoll.wait(Native Method)
+        at java.base@17.0.11/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+        at platform/java.net.http@17.0.11/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:889)
+
+"UrlChecker-2" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.11/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@17.0.11/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+
+"CompletableFutureDelayScheduler" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+
+"HttpClient-2-SelectorManager" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.11/sun.nio.ch.WEPoll.wait(Native Method)
+        at java.base@17.0.11/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+        at platform/java.net.http@17.0.11/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:889)
+
+"Keep-Alive-Timer" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.11/java.lang.Thread.sleep(Native Method)
+        at java.base@17.0.11/sun.net.www.http.KeepAliveCache.run(KeepAliveCache.java:238)
+        at java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+        at java.base@17.0.11/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"HttpClient-3-SelectorManager" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.11/sun.nio.ch.WEPoll.wait(Native Method)
+        at java.base@17.0.11/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+        at platform/java.net.http@17.0.11/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:889)
+
+"HttpClient-4-SelectorManager" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.11/sun.nio.ch.WEPoll.wait(Native Method)
+        at java.base@17.0.11/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+        at java.base@17.0.11/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+        at platform/java.net.http@17.0.11/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:889)
+
+
+
