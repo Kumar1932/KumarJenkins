@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.Vtiger.BaseUtility.BaseClass;
 import com.Vtiger.generic.WebDriverUtility.WebDriverUtility;
 
 /**
@@ -12,10 +13,9 @@ import com.Vtiger.generic.WebDriverUtility.WebDriverUtility;
  * @author kumar
  */
 
-public class HomePage 
+public class HomePage extends BaseClass
 {
 	WebDriverUtility wlib=new WebDriverUtility();
-   
 	public HomePage(WebDriver driver) 
 	{
 	 PageFactory.initElements(driver, this);
