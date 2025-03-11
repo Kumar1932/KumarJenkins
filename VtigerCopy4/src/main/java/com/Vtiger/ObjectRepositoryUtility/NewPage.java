@@ -6,5 +6,6 @@ public class NewPage {
 	//Hi boss usin git bash
 	public static void main(String[] args) {
 		System.out.println("hi");
+		System.out.println("hi bye");
 	}
 }
