@@ -5,6 +5,6 @@ public class NewPage {
 	//checking rebase
 	//Hi boss usin git bash
 	public static void main(String[] args) {
-		
+		System.out.println("hi");
 	}
 }
